@@ -13,9 +13,6 @@ class App extends Component {
     console.log(this.props.apikey);
   }
 
-  trending() {
-    
-  }
   render() {
     return (
         <header className="giphy test">
