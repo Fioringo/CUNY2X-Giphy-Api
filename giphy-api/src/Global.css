@@ -1,0 +1,32 @@
+:root {
+	--main-bgc: #00456B;
+	--lvl1-bgc: #F77F00;
+	--lvl2-bgc: #F2C810;
+	--btn-bgc: #FCBF49;
+	--lvl0-txtc: #FFFFFF;
+	--lvl1-txtc: #000000;
+}
+
+body {
+	background-color: var(--main-bgc);
+	/*width: 98%;*/
+	height: 100vh;
+}
+
+input {
+	background-color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 0.5em;
+	text-align: center;
+	font-size: 1.2em;
+	width: 10vw;
+	align-self: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
