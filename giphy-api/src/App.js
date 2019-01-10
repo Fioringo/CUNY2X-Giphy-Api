@@ -5,9 +5,11 @@ import GifCard from "./components/GifCard";
 import axios from "axios";
 
 class App extends Component {
+  
   constructor(props){
     super(props);
     this.state = {
+      random: false,
       gifs: []
     }
     console.log(this.props.apikey);
@@ -15,13 +17,14 @@ class App extends Component {
 
   render() {
     return (
-        <header className="giphy test">
+        <div className="giphy test">
           <div>
-            <p>{this.props.apikey}</p>
-            {/* <SearchBar key={this.state.key}/> */}
-             <GifCard usekey={this.state.key}/>
+              <button onclick={() => this.setState({
+                random: !random,
+              })}>Random</button>
+              <SearchBar apikey={this.props.apikey} random={this.state.random}/>
           </div>
-        </header>
+        </div>
     );
   }
 }

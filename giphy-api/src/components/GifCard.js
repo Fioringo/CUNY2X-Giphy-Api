@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 
 class GifCard extends Component {
-  constructor(props){
-    super(props);
-
-  }
-
   render() {
+    let {
+      fixed_height,
+
+    } = this.props.data.images;
+    console.log(this.props.data.images);
     return (
-        <header className="giphy test">
-          <div>
-            <p>hi</p>
-            <p>{this.props.usekey}</p>
-          </div>
-        </header>
+        <div className="aGif">
+            <img src={fixed_height.url} width={fixed_height.width} height={fixed_height.height} alt=""/>
+        </div>
     );
   }
 }
