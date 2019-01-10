@@ -1,5 +1,5 @@
 {
-  "name": "giphy-api",
+  "name": "giphy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
